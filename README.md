@@ -5,3 +5,4 @@ Here in this repo I'll create different projects that will help me to learn reac
  - Password Generator
  - React Router
  - Theme Switcher
+ - TicTacToe Game
