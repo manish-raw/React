@@ -6,3 +6,4 @@ Here in this repo I'll create different projects that will help me to learn reac
  - React Router
  - Theme Switcher
  - TicTacToe Game
+ - Todo App (Using RTK)
