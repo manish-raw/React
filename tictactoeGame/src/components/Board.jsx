@@ -29,21 +29,26 @@
 
     return (
         <>
-            <div className="status">{status}</div>
-            <div className="board-row">
-                <Square value={squares[0]} onSquareClick={()=> handleClick(0)} />
-                <Square value={squares[1]} onSquareClick={()=> handleClick(1)} />
-                <Square value={squares[2]} onSquareClick={()=> handleClick(2)} />
-            </div>
-            <div className="board-row">
-                <Square value={squares[3]} onSquareClick={()=> handleClick(3)}/>
-                <Square value={squares[4]} onSquareClick={()=> handleClick(4)}/>
-                <Square value={squares[5]} onSquareClick={()=> handleClick(5)}/>
-            </div>
-            <div className="board-row">
-                <Square value={squares[6]} onSquareClick={()=> handleClick(6)}/>
-                <Square value={squares[7]} onSquareClick={()=> handleClick(7)}/>
-                <Square value={squares[8]} onSquareClick={()=> handleClick(8)}/>
+            
+            <div className="bg-gray-900 h-screen">
+                <div className="text-white sticky w-full bg-gray-600 p-4 text-center font-bold text-3xl cursor-pointer">Tic Tac Toe Game</div>
+                <div className="text-black mb-10 p-5 bg-white text-2xl ">{status}</div>
+
+                <div className="w-2/12 border-1 h-14">
+                    <Square value={squares[0]} onSquareClick={()=> handleClick(0)} />
+                    <Square value={squares[1]} onSquareClick={()=> handleClick(1)} />
+                    <Square value={squares[2]} onSquareClick={()=> handleClick(2)} />
+                </div>
+                <div className="w-2/12 border-1 h-14">
+                    <Square value={squares[3]} onSquareClick={()=> handleClick(3)}/>
+                    <Square value={squares[4]} onSquareClick={()=> handleClick(4)}/>
+                    <Square value={squares[5]} onSquareClick={()=> handleClick(5)}/>
+                </div>
+                <div className="w-2/12 border-1 h-14">
+                    <Square value={squares[6]} onSquareClick={()=> handleClick(6)}/>
+                    <Square value={squares[7]} onSquareClick={()=> handleClick(7)}/>
+                    <Square value={squares[8]} onSquareClick={()=> handleClick(8)}/>
+                </div>
             </div>
             
         </>
